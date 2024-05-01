@@ -8,6 +8,8 @@
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <script type="module" src="./components/index.js"></script>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap">
@@ -15,18 +17,8 @@
   <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body>
-  <header>
-    <!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
-    <!-- !!! REMOVE "la-patient-guide/" FROM LINKS BEFORE GOING LIVE !!! -->
-    <!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
-    <a class="logo" href="#"></a>
-    <a href="/la-patient-guide/">Home</a>
-    <a href="/la-patient-guide/repository">Repository</a>
-    <a href="/la-patient-guide/resources">Resources</a>
-    <a href="/la-patient-guide/about">About</a>
-    <a href="/la-patient-guide/escape">Quick Escape</a>
-  </header>
+<body style="transition: 0.1s; opacity: 0;">
+  <header-nav></header-nav>
 
   <section id="welcome-section">
     <div id="welcome-content-container">
