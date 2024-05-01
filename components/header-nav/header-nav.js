@@ -1,8 +1,11 @@
-/*///////////////////////////////////////////////////////////
-//                                                         //
-// REMOVE "la-patient-guide/" FROM LINKS BEFORE GOING LIVE //
-//                                                         //
-///////////////////////////////////////////////////////////*/
+////////////////////////////////////////////////////////////////////////////////////////
+//                                                                                    //
+// GitHub pages fix: prefix links with "la-patient-guide/"                           //
+// GitHub appends the project name to the url, e.g. "username.github.io/project-name" //
+//                                                                                    //
+// TODO - REMOVE "la-patient-guide/" FROM LINKS BEFORE ADDING CUSTOM URL              //
+//                                                                                    //
+////////////////////////////////////////////////////////////////////////////////////////
 const template = document.createElement("template")
 template.innerHTML = /* html */ `
   <style> @import "/components/header-nav/header-nav.css"; </style>
