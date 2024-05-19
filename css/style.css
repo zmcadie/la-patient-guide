@@ -1,3 +1,7 @@
+html {
+  min-height: 100%;
+}
+
 body {
   align-items: center;
   background: linear-gradient(112deg, rgba(255, 249, 254, 0.20) 27.23%, rgba(255, 255, 255, 0.17) 66.72%, rgba(255, 159, 240, 0.16) 81.79%, rgba(255, 117, 233, 0.14) 87.83%, rgba(255, 59, 224, 0.20) 99.56%), linear-gradient(180deg, rgba(182, 163, 235, 0.20) 0%, rgba(214, 210, 255, 0.20));

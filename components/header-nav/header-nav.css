@@ -14,14 +14,24 @@ header {
   display: flex;
   justify-content: flex-end;
   margin-bottom: 70px;
-  padding: 16px 60px 16px 16px;
+  padding: 0px 60px 0px 16px;
+}
+
+header::after {
+  content: "";
+  border-bottom: solid 1.3px #2F6BFF;
+  top: 42px;
+  transition: left 0.3s ease, width 0.3s ease;
+  position: absolute;
+  pointer-events: none;
 }
 
 header a {
+  box-sizing: border-box;
   color: #2F6BFF;
   text-align: center;
   text-decoration: none;
-  padding: 2px 4px;
+  padding: 22px 4px;
   width: 150px;
 }
 
@@ -30,4 +40,8 @@ header a.logo {
   border-radius: 8px;
   height: 48px;
   margin-right: auto;
+}
+
+header a:hover span {
+  font-weight: 500;
 }
