@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Repository - LA Patient Guide</title>
+  <meta name="author" content="">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <base href="https://zmcadie.github.io/la-patient-guide/" />
+  <script>
+    // if running locally use path served by [http-server](https://www.npmjs.com/package/http-server)
+    if (window.location.origin === "http://127.0.0.1:8080") {
+      document.querySelector("base").href = "http://127.0.0.1:8080"
+    }
+  </script>
+
+  <script type="module" src="./components/index.js"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap">
+
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body style="transition: 0.1s; opacity: 0;">
+  <header-nav data-current-path="/repository"></header-nav>
+
+  <main>
+    <repository-container></repository-container>
+  </main>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>

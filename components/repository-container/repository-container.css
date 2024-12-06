@@ -1,0 +1,73 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  margin-left: 94px;
+  width: 60%;
+  max-width: 840px;
+}
+
+.topic-container {
+  list-style: none;
+}
+
+.topic-container summary {
+  cursor: pointer;
+  list-style: none;
+}
+
+.topic-container h1 {
+  border-bottom: 1px solid #d9d9d9;
+  /* display: inline-block; */
+  font-size: 20px;
+  font-weight: 700;
+  height: 54px;
+  line-height: 54px;
+  position: relative;
+}
+
+.topic-container h1 .topic-number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  border-radius: 50%;
+  height: 64px;
+  width: 64px;
+  /* margin-right: 30px; */
+  position: absolute;
+  left: -94px;
+  top: -2px;
+}
+
+.topic-container h1::after {
+  background-image: url("/images/carat_down.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  content: "";
+  height: 54px;
+  position: absolute;
+  right: 0;
+  width: 24px;
+}
+
+.topic-container[open] h1::after {
+  transform: rotate(180deg);
+}
+
+.topic-container > p {
+  line-height: 24px;
+  margin: 20px 0px;
+  padding: 0px 30px;
+}
+
+.subtopic-list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 20px;
+  /* row-gap: 45px; */
+  justify-content: flex-start;
+  list-style: none;
+  /* margin-top: 45px; */
+  padding: 15px 30px;
+}

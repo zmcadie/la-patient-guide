@@ -1,0 +1,6 @@
+## Questions to prepare for
+When you call to schedule an appointment, the person you talk to will have a list of questions to ask you. This list of questions is called an intake. Some of the questions might feel weird and personal, or unrelated to abortion.They ask you these questions so that they can they can help figure out what the best place is for you to get care and give the doctor all of the information need to know before you get there. This will save you time, and often means that you only have to have one appointment with them instead of two.
+
+Because of these intake questions, you might want to make your calls when you have at least ten to fifteen minutes available. You might also want to make the phone calls from somewhere where you will feel comfortable answering some questions about your medical history. For example, you will probably be asked to give your **height, weight,** and **blood type.** You also be asked you how many **times you’ve been pregnant,** if you’ve ever **had a c-section,** if you take any **medications** and if you have **allergies.**
+
+If you can’t call from a private place, that’s okay too. Clinics will understand that you are balancing a lot. Call when you can, even if it’s not the perfect time.

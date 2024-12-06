@@ -1,0 +1,5 @@
+## What is a crisis pregnancy center?
+Crisis pregnancy clinics (CPCs) are run by people who are against abortion. They look just like abortion clinics so that people who want abortions will go to them. They are designed to trick people into changing their mind about getting an abortion. If you go to a crisis pregnancy clinic, they might tell you it’s too late in the pregnancy to get an abortion when that’s not true. They might make you watch videos that describe fake consequences or risks to abortion, or make you listen to the electro-pulse or the ‘heartbeat’. They will not refer you to an abortion clinic. Also, it’s important to know that the people who work there often do not have any medical training.
+
+How to spot crisis pregnancy clinics:
+Look for words like “pregnancy options”, “pregnancy care center” or “pregnancy resource center”. If they offer free pregnancy tests and refuse to give you the result or refuse to give you the result in writing, you are likely at a crisis pregnancy center.
