@@ -13,8 +13,8 @@ template.innerHTML = /* html */ `
       </p>
     </div>
     <div class="subtopic-actions-container">
-      <button>+</button>
-      <button>⤡</button>
+      <button class="save-button"></button>
+      <button class="expand-button"></button>
     </div>
   </li>
 `
@@ -26,6 +26,20 @@ customElements.define(
       super();
       const shadowRoot = this.attachShadow({ mode: "open" });
       shadowRoot.appendChild(template.content.cloneNode(true));
+
+      window.addEventListener("DOMContentLoaded", () => window.setTimeout(() => moveSelector(), 10) )
+
+      const container = this.shadowRoot.querySelector("li")
+      const saveButton = this.shadowRoot.querySelector(".save-button")
+      const expandButton = this.shadowRoot.querySelector(".expand-button")
+
+      saveButton.addEventListener("click", e => {
+        if (e.target === e.currentTarget) container.classList.toggle("saved")
+      })
+      
+      expandButton.addEventListener("click", e => {
+        if (e.target === e.currentTarget) container.classList.toggle("open")
+      })
     }
   }
 )
