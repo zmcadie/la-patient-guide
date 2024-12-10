@@ -1,6 +1,6 @@
 const template = document.createElement("template")
 template.innerHTML = /* html */ `
-  <style> @import "/components/header-nav/header-nav.css"; </style>
+  <style> @import "components/header-nav/header-nav.css"; </style>
   <style id="selectorStyles"></style>
   <header id="header-nav">
     <a class="logo" href="/"></a>

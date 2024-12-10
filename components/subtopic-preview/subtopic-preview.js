@@ -1,6 +1,6 @@
 const template = document.createElement("template")
 template.innerHTML = /* html */ `
-  <style> @import "/components/subtopic-preview/subtopic-preview.css"; </style>
+  <style> @import "components/subtopic-preview/subtopic-preview.css"; </style>
   <li class="subtopic-container">
     <div class="subtopic-content-container">
       <h2><slot name="subtopic-title">Finding an appointment</slot></h2>

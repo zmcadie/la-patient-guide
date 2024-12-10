@@ -1,6 +1,6 @@
 const template = document.createElement("template")
 template.innerHTML = /* html */ `
-  <style> @import "/components/repository-container/repository-container.css"; </style>
+  <style> @import "components/repository-container/repository-container.css"; </style>
   <details class="topic-container" open>
     <summary>
       <h1><span class="topic-number">1</span>Booking an appointment</h1>
