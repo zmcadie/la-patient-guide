@@ -3,20 +3,20 @@ template.innerHTML = /* html */ `
   <style> @import "components/header-nav/header-nav.css"; </style>
   <style id="selectorStyles"></style>
   <header id="header-nav">
-    <a class="logo" href="/"></a>
-    <a href="/">
+    <a class="logo" href=""></a>
+    <a href="">
       <span>Home</span>
     </a>
-    <a href="/repository">
+    <a href="repository">
       <span>Repository</span>
     </a>
-    <a href="/resources">
+    <a href="resources">
       <span>Resources</span>
     </a>
-    <a href="/about">
+    <a href="about">
       <span>About</span>
     </a>
-    <a href="/escape">
+    <a href="escape">
       <span>Quick Escape</span>
     </a>
   </header>
