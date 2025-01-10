@@ -16,7 +16,7 @@ template.innerHTML = /* html */ `
     <a href="about">
       <span>About</span>
     </a>
-    <a href="escape">
+    <a href="https://www.youtube.com" onclick="document.body.classList.add('escape')">
       <span>Quick Escape</span>
     </a>
   </header>
