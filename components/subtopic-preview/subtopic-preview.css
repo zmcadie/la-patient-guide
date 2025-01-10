@@ -7,20 +7,37 @@
   border-radius: 12px;
   box-shadow: 0px 4px 4px 0px #00000040;
   box-sizing: border-box;
+  cursor: pointer;
   display: flex;
   flex-direction: row;
   flex-basis: auto;
-  /* height: 324px; */
-  padding: 16px;
-  /* width: 240px; */
+  padding: 16px 100px 16px 60px;
+  /* padding-left: 57px; */
+  position: relative;
 }
 
 .subtopic-content-container {
   overflow: hidden;
+  /* padding-left: 12px; */
 }
 
-.subtopic-container h2 {
-  /* border-bottom: 1px solid #d9d9d9; */
+::slotted(h2)::after {
+  background-image: url("/images/carat_down.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 85%;
+  content: "";
+  height: 50px;
+  position: absolute;
+  right: 27px;
+  width: 24px;
+}
+
+.subtopic-container.open ::slotted(h2)::after {
+  transform: rotate(180deg);
+}
+
+::slotted(h2) {
   font-size: 1rem;
   font-weight: 500;
   line-height: 1.3rem;
@@ -28,11 +45,15 @@
   padding-bottom: 3px;
 }
 
-.subtopic-container.open h2 {
+.subtopic-container.open ::slotted(h2) {
   padding-bottom: 15px;
 }
 
-.subtopic-container > .subtopic-content-container > p {
+.subtopic-container.open ::slotted(p) {
+  cursor: text;
+}
+
+.subtopic-content-container ::slotted(p) {
   font-size: 0.9rem;
   height: 1.3rem;
   line-height: 1.3rem;
@@ -45,13 +66,13 @@
   /* width: 100%; */
 }
 
-.subtopic-container.open > .subtopic-content-container > p {
+.subtopic-container.open ::slotted(p) {
   height: auto;
   text-overflow: unset;
   white-space: wrap;
 }
 
-.subtopic-container .subtopic-actions-container {
+.subtopic-actions-container {
   align-self: flex-start;
   align-items: center;
   display: flex;
@@ -60,62 +81,54 @@
   margin-left: 20px;
 }
 
-.subtopic-container .subtopic-actions-container button {
+.subtopic-action-button {
   background: none;
   border: none;
   border-radius: 50%;
   color: #666;
   cursor: pointer;
+  flex-shrink: 0;
   font-size: 25px;
   height: 30px;
   width: 30px;
   position: relative;
 }
 
-.subtopic-container .subtopic-actions-container button:hover {
+.subtopic-action-button:hover {
   background-color: #efefef;
   box-shadow: 0px 2px 4px 0px #00000040;
 }
 
-.subtopic-container .subtopic-actions-container button:active {
+.subtopic-action-button:active {
   background-color: #efefef;
   box-shadow: 0px 1px 2px 0px #00000040;
 }
 
-.subtopic-container .subtopic-actions-container .save-button {
+.subtopic-action-button.save-button {
   background-image: url("/images/star.svg");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 55%;
+  background-size: 60%;
+  position: absolute;
+    left: 10px;
+    top: 23px;
 }
 
-.subtopic-container.saved .subtopic-actions-container .save-button {
+.subtopic-container.saved .save-button {
   background-image: url("/images/star-filled.svg");
 }
 
-.subtopic-container .subtopic-actions-container .expand-button {
+/* .subtopic-action-button.expand-button {
   background-image: url("/images/arrow_down.svg");
   background-position: 50% 60%;
   background-repeat: no-repeat;
   background-size: 50%;
+  position: absolute;
+    right: 15px;
+    top: 23px;
 }
 
-.subtopic-container.open .subtopic-actions-container .expand-button {
+.subtopic-container.open .expand-button {
   background-image: url("/images/arrow_up.svg");
   background-position: 50% 50%;
-}
-
-/* .topic-container h1::after {
-  background-image: url("/images/carat_down.svg");
-  background-position: center;
-  background-repeat: no-repeat;
-  content: "";
-  height: 54px;
-  position: absolute;
-  right: 0;
-  width: 24px;
-}
-
-.topic-container[open] h1::after {
-  transform: rotate(180deg);
 } */

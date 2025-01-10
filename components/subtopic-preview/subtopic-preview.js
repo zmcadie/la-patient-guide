@@ -2,19 +2,16 @@ const template = document.createElement("template")
 template.innerHTML = /* html */ `
   <style> @import "components/subtopic-preview/subtopic-preview.css"; </style>
   <li class="subtopic-container">
+    <button class="subtopic-action-button save-button"></button>
     <div class="subtopic-content-container">
-      <h2><slot name="subtopic-title">Finding an appointment</slot></h2>
-      <p>
-        <slot name="preview-body">
+      <slot name="subtopic-title"><h2>Finding an appointment</h2></slot>
+      <slot name="preview-body">
+        <p>
           The first step is to make an appointment. Two good sources for finding a clinic at any time in pregnancy are ineedana.com and abortionfinder.org. These sources will help you make sure that you don't end up at a crisis pregnancy clinic.
           <br><br>
           If you are looking specifically for care offered after 24wks, this list of providers from Ibis Reproductive Health might be a good place to start.
-        </slot>
-      </p>
-    </div>
-    <div class="subtopic-actions-container">
-      <button class="save-button"></button>
-      <button class="expand-button"></button>
+        </p>
+      </slot>
     </div>
   </li>
 `
@@ -37,8 +34,8 @@ customElements.define(
         if (e.target === e.currentTarget) container.classList.toggle("saved")
       })
       
-      expandButton.addEventListener("click", e => {
-        if (e.target === e.currentTarget) container.classList.toggle("open")
+      container.addEventListener("click", e => {
+        if (e.target !== saveButton && !(container.classList.contains("open") && e.target.tagName === "P")) container.classList.toggle("open")
       })
     }
   }
